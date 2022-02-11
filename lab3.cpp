@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <chrono>
 #include <random>
-#include "Header.hpp"
+#include <Header.hpp>
 const int N = 10000;
 
 class Timer
