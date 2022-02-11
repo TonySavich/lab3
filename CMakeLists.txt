@@ -17,20 +17,6 @@ include_directories("ext/SFML/include/")	# добавляем директори
 include_directories("/")
 link_directories("ext/SFML/lib/")	
 
-add_executable("${PROJECT_NAME}" main.cpp Header.hpp Source.cpp)
-											
-target_link_libraries("${PROJECT_NAME}" sfml-graphics-s-d
-						  sfml-window-s-d
-						  sfml-system-s-d
-						  opengl32
-						  freetype
-						  winmm
-						  gdi32
-						  sfml-audio-s-d
-						  openal32
-						  flac
-						  vorbisenc
-						  vorbisfile
-						  vorbis
-						  ogg)
+add_executable("${PROJECT_NAME}" lab3.cpp Header.hpp Source.cpp)
+
 
