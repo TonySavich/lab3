@@ -82,10 +82,7 @@ double bisektion(double a, double b, double e) {
     while (abs(a - b) > e) 
        {
         x = (a + b) / 2.0;
-        if ((x == a) || (x == b)) {
-            return x;
-        }
-        else if (f(x) * f(a) > 0) {
+    if (f(x) * f(a) > 0) {
             a = x;
         }
         else {
